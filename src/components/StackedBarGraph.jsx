@@ -103,7 +103,7 @@ const StackedBarGraph = () => {
     },
     layout: {
       padding: {
-        bottom: 50,
+        bottom: 0,
       },
     },
   };

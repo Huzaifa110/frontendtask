@@ -2,7 +2,7 @@
 
 .sidebar {
     width: 235px;
-    max-height: calc(100vh - 120.2px);
+    max-height: calc(100vh - 120px);
     background: #FFFFFF;
     position: fixed;
     top: 60px;
@@ -12,6 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: width 0.3s ease;
+}
+
+.sidebar.expanded {
+    width: 100%;
+    max-height: 100vh;
+    left: 0;
+    z-index: 1000;
 }
 
 .profile-card {
@@ -105,4 +113,87 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        display: none;
+    }
+
+    .sidebar.expanded {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        max-height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .expand-button {
+        display: block;
+    }
+
+    .collapse-button {
+        display: block;
+    }
+
+    .expand-button,
+    .collapse-button {
+        position: fixed;
+        background-color: #4680FF;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .expand-button {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .collapse-button {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sidebar.expanded {
+        width: 100%;
+        height: 100%;
+    }
+
+    .expand-button,
+    .collapse-button {
+        position: fixed;
+        background-color: #4680FF;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .expand-button {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .collapse-button {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }

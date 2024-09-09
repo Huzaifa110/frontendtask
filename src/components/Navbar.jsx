@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaBell, FaEnvelope } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import flag from '../assets/images/flag.PNG';
 import navimg from '../assets/images/navimage.png';
@@ -39,7 +39,7 @@ const Navbar = () => {
             <img src={email} alt="email" className="envelope" />
             <span className="mail">2</span>
           </div>
-          <div className="relative flex items-center">
+          <div className="image-div relative flex items-center">
             <img
               src={navimg}
               alt="Profile"

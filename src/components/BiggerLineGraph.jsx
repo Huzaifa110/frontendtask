@@ -90,7 +90,7 @@ const LineGraph = () => {
     },
     layout: {
       padding: {
-        bottom: 20,
+        bottom: 0,
       },
     },
   };

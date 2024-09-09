@@ -112,7 +112,7 @@ const PointyLineGraph = () => {
         },
         layout: {
             padding: {
-                bottom: 60,
+                bottom: 0,
             },
         },
     };
