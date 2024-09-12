@@ -20,7 +20,7 @@ const SecondGrid = () => {
                         <div className="overall-growth-heading">Overall Growth</div>
                         <div className="overall-growth-percentage">35.80%</div>
                     </div>
-                    <div className="monthly-container">s
+                    <div className="monthly-container">
                         <div className="monthly-heading">Monthly</div>
                         <div className="monthly-percentage">45.20%</div>
                     </div>
