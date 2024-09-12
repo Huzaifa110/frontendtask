@@ -7,5 +7,10 @@ dotenv.config();
 export default defineConfig({
   base: process.env.VITE_BASE_URL || '/',
   plugins: [react()],
-  assetsInclude: ['**/*.png', '**/*.PNG', '**/*.mp4']
+  assetsInclude: ['**/*.png', '**/*.PNG', '**/*.mp4'],
+  build: {
+    rollupOptions: {
+      external: ['/frontendtask/src/main.jsx'],
+    },
+  }
 });
