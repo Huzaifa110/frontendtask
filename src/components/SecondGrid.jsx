@@ -10,7 +10,8 @@ const SecondGrid = () => {
             <div className="new-patient">
                 <div className='new-patient-header'>
                     <div className="left-new-patient-header">
-                        <h2 className="new-patient-heading">New Patient</h2>
+                        <h2 className="new-patient-heading text-s
+                        m lg:text-md">New Patient</h2>
                     </div>
                     <div className="right-new-patient-header"><span className='twenty-five-percent'></span>25% High then last month</div>
                 </div>
@@ -19,7 +20,7 @@ const SecondGrid = () => {
                         <div className="overall-growth-heading">Overall Growth</div>
                         <div className="overall-growth-percentage">35.80%</div>
                     </div>
-                    <div className="monthly-container">
+                    <div className="monthly-container">s
                         <div className="monthly-heading">Monthly</div>
                         <div className="monthly-percentage">45.20%</div>
                     </div>
@@ -33,7 +34,7 @@ const SecondGrid = () => {
             <div className="new-patient">
                 <div className='new-patient-header'>
                     <div className="left-new-patient-header">
-                        <h2 className="new-patient-heading">Heart Surgeries</h2>
+                        <h2 className="new-patient-heading  text-sm lg:text-md">Heart Surgeries</h2>
                     </div>
                     <div className="right-heart-surgeries-header"><span className='thirty-percent'></span>30% Low then last month</div>
                 </div>
@@ -56,7 +57,7 @@ const SecondGrid = () => {
             <div className="new-patient">
                 <div className='new-patient-header'>
                     <div className="left-new-patient-header">
-                        <h2 className="new-patient-heading">Medical Treatment</h2>
+                        <h2 className="new-patient-heading text-sm lg:text-md">Medical Treatment</h2>
                     </div>
                     <div className="right-new-patient-header"><span className='twenty-five-percent'></span>20% High then last month</div>
                 </div>
